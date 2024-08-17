@@ -54,9 +54,25 @@ origin = https://github.com/Guilouz/Creality-Helper-Script.git
 primary_branch = main
 managed_services = klipper
 
+[timelapse]
+output_path = /usr/data/printer_data/timelapse/
+frame_path = /usr/data/printer_data/frames/
+ffmpeg_binary_path = /opt/bin/ffmpeg
+snapshoturl = http://localhost:8080/?action=snapshot
+
 [update_manager mainsail]
 type = web
 channel = beta
 repo = mainsail-crew/mainsail
 path = /usr/data/mainsail
+
+[update_manager mobileraker]
+type = git_repo
+path = /usr/data/mobileraker_companion
+origin = https://github.com/Clon1998/mobileraker_companion.git
+virtualenv = /usr/data/mobileraker-env
+primary_branch = main
+requirements = scripts/mobileraker-requirements.txt
+install_script = scripts/install.sh
+managed_services = mobileraker
 

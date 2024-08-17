@@ -54,19 +54,6 @@ origin = https://github.com/Guilouz/Creality-Helper-Script.git
 primary_branch = main
 managed_services = klipper
 
-[webcam Camera]
-location = printer
-enabled = True
-service = mjpegstreamer
-target_fps = 15
-target_fps_idle = 5
-stream_url = http://192.168.34.56:8080/?action=stream
-snapshot_url = http://192.168.34.56:8080/?action=snapshot
-flip_horizontal = False
-flip_vertical = False
-rotation = 0
-aspect_ratio = 4:3
-
 [timelapse]
 output_path = /usr/data/printer_data/timelapse/
 frame_path = /usr/data/printer_data/frames/
